@@ -1,0 +1,30 @@
+extends ../layout.pug
+block content
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') ID
+        th(scope='col') FirstName
+        th(scope='col') Last Name
+        th(scope='col') Address
+        th(scope='col') Email
+        th(scope='col') Phone Number
+        th(scope='col') Picture
+        th(scope='col') Action
+    tbody
+     each user in users
+      tr
+        td= user.id
+        td= user.firstName
+        td= user.lastName
+        td= user.address
+        td= user.email
+        td= user.phoneNumber
+        td= user.picture
+        td
+          button.btn.btn-primary(href=`/users/${user.id}` role='button') Edit 
+          button.btn.btn-danger(href=`/users/${user.id}` role='button') Delete
+          a.btn.btn-primary(href=`/users/edit/${user.id}` role='button') Edit
+          a.btn.btn-danger(href=`/users/delete/${user.id}` role='button') Delete
+
+            

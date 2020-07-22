@@ -1,0 +1,12 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "wd2",
+    "host": "localhost",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
+    }
+  }
+}

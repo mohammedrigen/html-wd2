@@ -1,0 +1,19 @@
+form(method='post' action=`/users/${id}`)
+  form(method='post' action=`/users/edit/${user.id}`)
+    .form-group
+      label(for='exampleInputEmail1') First Name
+      input.form-control(type='text' name='fName' value=user.firstName)
+      label(for='exampleInputEmail1') Last Name
+      input.form-control(type='text' name='lName')
+      label(for='exampleInputEmail1') Email
+      input.form-control(type='text' name='email')
+      label(for='exampleInputEmail1') Phone Number
+      input.form-control(type='text' name='phone')
+      label(for='exampleInputEmail1') Address
+      input.form-control(type='text' name='address')
+      label(for='exampleInputEmail1') Picture
+      input.form-control(type='text' name='picture')
+      .form-check
+        input#exampleCheck1.form-check-input(type='checkbox')
+        label.form-check-label(for='exampleCheck1') Check me out
+      button.btn.btn-primary(type='submit') Submit

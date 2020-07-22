@@ -1,0 +1,25 @@
+extends ../layout.pug
+block content
+  table.table.table-dark
+    thead
+      tr
+        th(scope='col') ID
+        th(scope='col') FirstName
+        th(scope='col') Last Name
+        th(scope='col') Address
+        th(scope='col') Email
+        th(scope='col') Phone Number
+        th(scope='col') Picture
+        th(scope='col') Action
+    tbody
+     
+      tr
+        td= user.id
+        td= user.firstName
+        td= user.lastName
+        td= user.address
+        td= user.email
+        td= user.phoneNumber
+        td= user.picture
+        td
+        td= user.picture
